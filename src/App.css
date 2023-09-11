@@ -1,31 +1,55 @@
-.App {
-  text-align: center;
+body {
+  font-family: muli, Helvetica, Arial, sans-serif;
+  position: relative;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Hover {
+  transition: all 0.5s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Hover:hover {
   color: white;
+  background: #50b04c;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-.heart {
-  color: #ff0000;
-}
-
-.small {
-  font-size: 0.75rem;
+@media only screen and (min-width: 960px) {
+  body {
+    position: relative;
+  }
+  .home {
+    position: absolute;
+    top: 5rem;
+    background: white;
+    border-radius: 12px;
+    left: 2rem;
+    width: 25rem;
+  }
+  .launch {
+    background-color: white;
+    color: #50b04c;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .registration {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 22%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  .registration h2 {
+    color: #50b04c;
+  }
+  .registration input {
+    font-size: 1.1vw;
+    border: 2px solid rgb(206, 198, 198);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .info {
+    max-width: 76vw;
+    margin: 1vw 0;
+    position: relative;
+    left: 0;
+  }
 }
